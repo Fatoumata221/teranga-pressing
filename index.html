@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SALY PRESSING — Pressing à Yoff Nord Foire, Dakar</title>
-<meta name="description" content="Saly Pressing, pressing de quartier à Yoff Nord Foire (Dakar) depuis 2015. Lavage au kilo à 500 FCFA, repassage, nettoyage à sec, retouches. Ouvert 7j/7 de 9h à 20h. Livraison à domicile possible.">
+<meta name="description" content="SALY PRESSING, votre pressing à Yoff Nord Foire (Dakar) depuis 2015. Lavage au kilo à 500 FCFA, repassage, nettoyage à sec, retouches. Ouvert 7j/7 de 9h à 20h. Livraison à domicile possible.">
 <meta name="theme-color" content="#9F1D4A">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%239F1D4A'/%3E%3Cg fill='none' stroke='%23fff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 6.5a2 2 0 1 1 2-2'/%3E%3Cpath d='M12 6.5v1.5L4 14.5a1.2 1.2 0 0 0 .7 2.2h14.6a1.2 1.2 0 0 0 .7-2.2L12 8'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -160,6 +160,13 @@ td{color:var(--muted)}
 .num{width:52px;height:52px;border-radius:999px;background:var(--accent);color:var(--on-accent);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:22px;transition:transform .4s}
 .card:hover .num{transform:scale(1.12) rotate(8deg)}
 
+/* Appel à l'action */
+.cta{position:relative;overflow:hidden;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding:clamp(28px,5vw,48px);border-radius:28px;background:var(--deep);color:#fff}
+.cta::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--accent);opacity:.18;right:-60px;bottom:-120px}
+.cta div{position:relative;display:flex;flex-direction:column;gap:8px;flex:1 1 320px}
+.cta p{font-size:18px;opacity:.92}
+.cta .btn{position:relative}
+
 /* Horaires */
 .hours{background:var(--soft);transition:background .4s}
 .hours .wrap{display:flex;flex-wrap:wrap;gap:40px}
@@ -259,11 +266,11 @@ footer .brand-name{font-size:20px}
     <div class="hero-text">
       <span class="badge"><span class="dot"></span>Depuis 2015 · Yoff Nord Foire, Dakar</span>
       <h1 id="titre">Vos habits propres, repassés et <span class="hl">prêts à porter.</span></h1>
-      <p class="lead">Chez SALY PRESSING, on vous accueille comme à la maison et on prend soin de chaque habit : lavage au kilo, repassage, nettoyage à sec et retouches.</p>
+      <p class="lead">Fini les heures à laver, étendre et repasser. Déposez votre linge chez SALY PRESSING : on s'en occupe avec soin, et vous le récupérez propre et prêt à porter. Ou on vous le livre.</p>
       <div class="hero-actions">
         <a class="btn btn-primary js-wa" href="https://wa.me/221772063116" target="_blank" rel="noopener">
           <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a3.5 3.5 0 0 1-1.8-1.8l.8-1-1-2z"/></svg>
-          Écrire sur WhatsApp
+          Commander sur WhatsApp
         </a>
         <a class="btn btn-outline" href="#tarifs">Voir les tarifs</a>
       </div>
@@ -310,16 +317,16 @@ footer .brand-name{font-size:20px}
 
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>Lavage au kilo</span><span>Repassage</span><span>Nettoyage à sec</span><span>Retouches</span><span>Livraison à domicile</span><span>Ouvert 7j/7</span>
-    <span>Lavage au kilo</span><span>Repassage</span><span>Nettoyage à sec</span><span>Retouches</span><span>Livraison à domicile</span><span>Ouvert 7j/7</span>
+    <span>Lavage au kilo</span><span>Repassage</span><span>Nettoyage à sec</span><span>Retouches</span><span>Livraison à domicile</span><span>Ouvert 7j/7</span><span>Depuis 2015</span>
+    <span>Lavage au kilo</span><span>Repassage</span><span>Nettoyage à sec</span><span>Retouches</span><span>Livraison à domicile</span><span>Ouvert 7j/7</span><span>Depuis 2015</span>
   </div>
 </div>
 
 <section class="section" style="padding-bottom:0">
   <div class="wrap">
     <div class="stats">
-      <div class="stat reveal"><strong><span class="count" data-to="2015" data-years>0</span> ans</strong><span>à votre service, depuis 2015</span></div>
-      <div class="stat reveal"><strong><span class="count" data-to="500">0</span> F</strong><span>le kilo de linge lavé</span></div>
+      <div class="stat reveal"><strong><span class="count" data-to="2015" data-years>0</span> ans</strong><span>d'expérience : le quartier nous fait confiance depuis 2015</span></div>
+      <div class="stat reveal"><strong><span class="count" data-to="500">0</span> F</strong><span>le kilo de linge, pesé devant vous</span></div>
       <div class="stat reveal"><strong>7j/7</strong><span>ouvert de 9h à 20h, même le dimanche</span></div>
     </div>
   </div>
@@ -329,29 +336,29 @@ footer .brand-name{font-size:20px}
   <div class="wrap">
     <div class="head reveal">
       <span class="kicker">Nos services</span>
-      <h2 class="h2">Tout ce qu'il faut pour <span class="hl">vos habits</span></h2>
+      <h2 class="h2">Du linge de tous les jours aux <span class="hl">grandes occasions</span></h2>
     </div>
     <div class="grid">
       <article class="card reveal">
         <span class="tag">500 F / kg</span>
         <span class="ico"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h16v18H4zM4 7h16M7 5h.01M10 5h.01M12 10a4 4 0 1 0 0 8 4 4 0 0 0 0-8"/></svg></span>
         <h3>Lavage au kilo</h3>
-        <p>Vos habits sont pesés. On lave et on sèche pour vous, ou on lave seulement et vous les faites sécher chez vous.</p>
+        <p>La solution la plus économique. On pèse votre linge devant vous, on le lave et on le sèche. Vous préférez sécher chez vous ? On le lave seulement.</p>
       </article>
       <article class="card reveal">
         <span class="ico"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18v2H3zM5 17l2-8h9a4 4 0 0 1 4 4v4M9 9V6h6"/></svg></span>
         <h3>Repassage</h3>
-        <p>Chemises, pantalons, tenues de cérémonie : rendus nets et pliés ou sur cintre.</p>
+        <p>Chemises, pantalons, boubous, tenues de cérémonie : vous les récupérez bien nets, pliés ou sur cintre, prêts à être portés.</p>
       </article>
       <article class="card reveal">
         <span class="ico"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a2 2 0 1 1 2 2c-1 0-2 .7-2 2v1L3 15a1.3 1.3 0 0 0 .8 2.4h16.4A1.3 1.3 0 0 0 21 15l-9-7"/></svg></span>
         <h3>Nettoyage à sec</h3>
-        <p>Pour les costumes, robes et tissus qui ne supportent pas l'eau.</p>
+        <p>Pour vos costumes, robes de soirée et tissus délicats qui ne passent pas à l'eau. Vos plus belles tenues entre de bonnes mains.</p>
       </article>
       <article class="card reveal">
         <span class="ico"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6a2.5 2.5 0 1 0 0 .1M6 18a2.5 2.5 0 1 0 0 .1M8 7.5L20 18M8 16.5L20 6"/></svg></span>
         <h3>Retouches</h3>
-        <p>Ourlets, boutons, fermetures éclair, ajustements simples.</p>
+        <p>Un ourlet à faire, un bouton qui manque, une fermeture éclair cassée ? On répare, et votre habit retrouve une seconde vie.</p>
       </article>
     </div>
   </div>
@@ -361,13 +368,13 @@ footer .brand-name{font-size:20px}
   <div class="wrap">
     <div class="head reveal">
       <span class="kicker">Tarifs</span>
-      <h2 class="h2">Des prix <span class="hl">clairs</span></h2>
+      <h2 class="h2">Des prix clairs, <span class="hl">sans surprise</span></h2>
     </div>
     <div class="kilo reveal">
       <div class="kilo-price">
         <span class="kicker">Lavage au kilo</span>
         <strong>500 FCFA <small>/ kg</small></strong>
-        <em>On pèse vos habits devant vous.</em>
+        <em>On pèse votre linge devant vous : vous savez exactement ce que vous payez.</em>
       </div>
       <div class="kilo-options">
         <div><b>Lavé et séché</b><span>On s'occupe de tout : vous récupérez votre linge sec.</span></div>
@@ -397,10 +404,22 @@ footer .brand-name{font-size:20px}
       <h2 class="h2">Simple comme <span class="hl">bonjour</span></h2>
     </div>
     <ol class="grid steps">
-      <li class="card reveal"><span class="num">1</span><h3>Déposez vos vêtements</h3><p>Apportez-les à la boutique, Rue 441, n° 26, Yoff Nord Foire.</p></li>
-      <li class="card reveal"><span class="num">2</span><h3>On s'en occupe</h3><p>Lavage au kilo, repassage, nettoyage à sec ou retouches, avec soin.</p></li>
-      <li class="card reveal"><span class="num">3</span><h3>Récupérez-les</h3><p>C'est vous qui choisissez : vous passez les récupérer, ou on vous les livre à domicile.</p></li>
+      <li class="card reveal"><span class="num">1</span><h3>Déposez votre linge</h3><p>Passez à la boutique, Rue 441, n° 26, Yoff Nord Foire, tous les jours de 9h à 20h.</p></li>
+      <li class="card reveal"><span class="num">2</span><h3>On s'en occupe</h3><p>Lavage, repassage, nettoyage à sec ou retouches : chaque habit est traité avec soin. Vous, vous profitez de votre temps.</p></li>
+      <li class="card reveal"><span class="num">3</span><h3>Récupérez-les</h3><p>Propres et prêts à porter. Vous passez les chercher, ou on vous les livre à domicile : c'est vous qui choisissez.</p></li>
     </ol>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div><h2 class="h2">Votre linge s'accumule ?</h2><p>Envoyez-nous un simple « Bonjour » sur WhatsApp. On s'occupe du reste.</p></div>
+      <a class="btn btn-wa js-wa" href="https://wa.me/221772063116" target="_blank" rel="noopener">
+        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a3.5 3.5 0 0 1-1.8-1.8l.8-1-1-2z"/></svg>
+        Écrire maintenant
+      </a>
+    </div>
   </div>
 </section>
 
@@ -408,7 +427,7 @@ footer .brand-name{font-size:20px}
   <div class="wrap">
     <div class="hours-col reveal">
       <span class="kicker">Horaires &amp; adresse</span>
-      <h2 class="h2">Passez nous voir</h2>
+      <h2 class="h2">Passez nous voir, <span class="hl">on vous attend</span></h2>
       <span class="open-now" id="ouvert"><i></i><span>Ouvert 7j/7 de 9h à 20h</span></span>
       <div class="days" id="jours"></div>
       <p style="font-weight:700">Rue 441, n° 26 · Yoff Nord Foire, Dakar</p>
@@ -424,8 +443,8 @@ footer .brand-name{font-size:20px}
   <div class="wrap">
     <div class="contact-col reveal">
       <span class="kicker">Contact</span>
-      <h2 class="h2">Une question ? Une <span class="hl">commande ?</span></h2>
-      <p class="lead">Le plus simple, c'est WhatsApp. Vous pouvez aussi nous appeler de 9h à 20h, tous les jours.</p>
+      <h2 class="h2">Prêt à nous confier <span class="hl">votre linge ?</span></h2>
+      <p class="lead">Un message WhatsApp suffit pour poser une question ou organiser une livraison. Vous pouvez aussi nous appeler, tous les jours de 9h à 20h.</p>
       <a class="direct direct-wa js-wa" href="https://wa.me/221772063116" target="_blank" rel="noopener">
         <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a3.5 3.5 0 0 1-1.8-1.8l.8-1-1-2z"/></svg>
         <span><small>WhatsApp</small><b>+221 77 206 31 16</b></span>
@@ -437,7 +456,7 @@ footer .brand-name{font-size:20px}
     </div>
 
     <form id="demande" class="reveal" novalidate>
-      <h3>Préparer ma demande</h3>
+      <h3>Préparer ma commande en 30 secondes</h3>
       <div class="row">
         <label>Votre nom<input type="text" name="nom" autocomplete="name" placeholder="Ex. Awa Ndiaye"></label>
         <label>Votre quartier<input type="text" name="quartier" placeholder="Ex. Yoff, Ouakam, Ngor"></label>
@@ -573,7 +592,7 @@ var io = new IntersectionObserver(function (entries) {
     el.querySelectorAll('.count').forEach(compter);
     io.unobserve(el);
   });
-}, { threshold: 0.15 });
+}, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
 document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 
 // En-tête qui prend une ombre au défilement
